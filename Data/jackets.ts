@@ -1,0 +1,133 @@
+import { Product } from "./shirts";
+
+export const MEN_JACKETS: Product[] = [
+  {
+    id: "stealth-hooded-windbreaker",
+    name: "Stealth Black Hooded Windbreaker",
+    price: "৳ ৩,২৫০",
+    image: "/men-jacket.png",
+    description: "Water-resistant hooded techwear windbreaker in solid black.",
+  },
+  {
+    id: "tactical-black-hooded-jacket",
+    name: "Tactical Matte Black Jacket",
+    price: "৳ ৩,৪৫০",
+    image: "/jacket.png",
+    description: "Heavy-duty matte black hooded tactical jacket with zip closure.",
+  },
+  {
+    id: "olive-green-hooded-parka",
+    name: "Olive Green Outdoor Parka",
+    price: "৳ ৩,৬৫০",
+    image: "/jacket-2.png",
+    description: "Rugged army olive green hooded parka for cold weather.",
+  },
+  {
+    id: "washed-black-denim-jacket",
+    name: "Washed Black Denim Trucker Jacket",
+    price: "৳ ২,৯৫০",
+    image: "/men-jacket-1.png",
+    description: "Classic distressed washed black denim jacket with button chest pockets.",
+  },
+  {
+    id: "black-crown-bomber-jacket",
+    name: "Black Minimalist Bomber Jacket",
+    price: "৳ ২,৮৫০",
+    image: "/men-jacket-2.png",
+    description: "Sleek black zip-up bomber jacket with ribbed collar.",
+  },
+  {
+    id: "sherpa-lined-leather-aviator",
+    name: "Sherpa Leather Aviator Jacket",
+    price: "৳ ৪,২৫০",
+    image: "/men-jacket-3.png",
+  description: "Premium black leather aviator jacket with plush white sherpa collar.",
+  },
+  {
+    id: "urban-black-hooded-puffer",
+    name: "Urban Black Hooded Utility Jacket",
+    price: "৳ ৩,১৫০",
+    image: "/men-jacket-4.png",
+    description: "Lightweight weather-proof black utility jacket with hood.",
+  },
+  {
+    id: "multi-pocket-cargo-field-jacket",
+    name: "Multi-Pocket Cargo Field Jacket",
+    price: "৳ ৩,৮৫০",
+    image: "/men-jacket-5.png",
+    description: "Military-inspired black field jacket with four heavy cargo pockets.",
+  },
+  {
+    id: "beige-black-retro-track-jacket",
+    name: "Beige & Black Retro Track Jacket",
+    price: "৳ ২,৭৫০",
+    image: "/men-jacket-6.png",
+    description: "Two-tone beige and black vintage streetwear track jacket.",
+  },
+];
+
+export const BOYS_JACKETS = [
+  {
+    id: "bj-1",
+    name: "Boys Varsity Winter Jacket",
+    description: "Warm bomber jacket with rib cuffs and crown crest.",
+    price: "৳ 2,450",
+    image: "/boy-jacket-1.png",
+  },
+  {
+    id: "bj-2",
+    name: "Boys Windbreaker Zip Jacket",
+    description: "Water-resistant lightweight jacket with hood.",
+    price: "৳ 1,950",
+    image: "/jacket.png",
+  },
+  {
+    id: "bj-3",
+    name: "Boys Olive Green Outdoor Parka",
+    description: "Rugged army olive green hooded parka for cold weather.",
+    price: "৳ 3,650",
+    image: "/jacket-2.png",
+  },
+  {
+    id: "bj-4",
+    name: "Boys Washed Black Denim Trucker Jacket",
+    description: "Classic distressed washed black denim jacket with button chest pockets.",
+    price: "৳ 2,950",
+    image: "/men-jacket-1.png",
+  },
+  {
+    id: "bj-5",
+    name: "Boys Black Minimalist Bomber Jacket",
+    description: "Sleek black zip-up bomber jacket with ribbed collar.",
+    price: "৳ 2,850",
+    image: "/men-jacket-2.png",
+  },
+  {
+    id: "bj-6",
+    name: "Boys Sherpa Leather Aviator Jacket",
+    description: "Premium black leather aviator jacket with plush white sherpa collar.",
+    price: "৳ 4,250",
+    image: "/men-jacket-3.png",
+  },
+  {
+    id: "bj-7",
+    name: "Boys Urban Black Hooded Utility Jacket",
+    description: "Lightweight weather-proof black utility jacket with hood.",
+    price: "৳ 3,150",
+    image: "/men-jacket-4.png",
+  },
+  {
+    id: "bj-8",
+    name: "Boys Multi-Pocket Cargo Field Jacket",
+    description: "Military-inspired black field jacket with four heavy cargo pockets.",
+    price: "৳ 3,850",
+    image: "/men-jacket-5.png",
+  },
+  {
+    id: "bj-9",
+    name: "Boys Beige & Black Retro Track Jacket",
+    description: "Two-tone beige and black vintage streetwear track jacket.",
+    price: "৳ 2,750",
+    image: "/men-jacket-6.png",
+  },
+];

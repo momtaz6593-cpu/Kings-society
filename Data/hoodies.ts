@@ -1,0 +1,133 @@
+import { Product } from "./shirts";
+
+export const MEN_HOODIES: Product[] = [
+  {
+    id: "gold-crown-heavyweight-black-hoodie",
+    name: "Gold Crown Heavyweight Black Hoodie",
+    price: "৳ ২,৪৫০",
+    image: "/men-hoodie-1.png",
+    description: "Premium black heavyweight fleece hoodie with subtle gold crown embroidery.",
+  },
+  {
+    id: "acid-wash-vintage-charcoal-hoodie",
+    name: "Acid Wash Vintage Charcoal Hoodie",
+    price: "৳ ২,৬৫০",
+    image: "/Hodie-1.png",
+    description: "Distressed vintage charcoal grey acid-wash hoodie with relaxed fit.",
+  },
+  {
+    id: "minimalist-k-logo-black-hoodie",
+    name: "Minimalist Crown Logo Pullover",
+    price: "৳ ২,২৫০",
+    image: "/Hodie-2.png",
+    description: "Clean aesthetic black fleece hoodie featuring small chest logo detail.",
+  },
+  {
+    id: "stealth-panel-two-tone-hoodie",
+    name: "Stealth Panel Two-Tone Dark Hoodie",
+    price: "৳ ২,৫৫০",
+    image: "/Hodie-3.png",
+    description: "Modern street style black hoodie with subtle dark grey shoulder paneling.",
+  },
+  {
+    id: "cream-beige-crown-society-hoodie",
+    name: "Cream Beige Crown Society Hoodie",
+    price: "৳ ২,৩৫০",
+    image: "/Hodie-4.png",
+    description: "Soft luxury cream beige oversized hoodie with center crown branding.",
+  },
+  {
+    id: "sleeve-pocket-tactical-black-hoodie",
+    name: "Sleeve Pocket Tactical Black Hoodie",
+    price: "৳ ২,৭৫০",
+    image: "/Hodie-5.png",
+    description: "Heavyweight black techwear hoodie with utility zip pocket on sleeve.",
+  },
+  {
+    id: "tribal-flame-sleeve-black-hoodie",
+    name: "Tribal Flame Sleeve Graphic Hoodie",
+    price: "৳ ২,৮৫০",
+    image: "/Hodie-6.png",
+    description: "Dark streetwear black hoodie with silver flame line art along the sleeves.",
+  },
+];
+
+export const BOYS_HOODIES = [
+  {
+    id: "bh-1",
+    name: "Boys Graphic Fleece Hoodie",
+    description: "Soft fleece hoodie with modern print and crown emblem.",
+    price: "৳ 1,650",
+    image: "/boy-hoodie-1.png",
+  },
+  {
+    id: "bh-2",
+    name: "Boys Acid Wash Vintage Charcoal Hoodie",
+    description: "Distressed vintage charcoal grey acid-wash hoodie with relaxed fit.",
+    price: "৳ 2,650",
+    image: "/Hodie-1.png",
+  },
+  {
+    id: "bh-3",
+    name: "Boys Minimalist Crown Logo Pullover",
+    description: "Clean aesthetic black fleece hoodie featuring small chest logo detail.",
+    price: "৳ 2,250",
+    image: "/Hodie-2.png",
+  },
+  {
+    id: "bh-4",
+    name: "Boys Stealth Panel Two-Tone Dark Hoodie",
+    description: "Modern street style black hoodie with subtle dark grey shoulder paneling.",
+    price: "৳ 2,550",
+    image: "/Hodie-3.png",
+  },
+  {
+    id: "bh-5",
+    name: "Boys Cream Beige Crown Society Hoodie",
+    description: "Soft luxury cream beige oversized hoodie with center crown branding.",
+    price: "৳ 2,350",
+    image: "/Hodie-4.png",
+  },
+  {
+    id: "bh-6",
+    name: "Boys Sleeve Pocket Tactical Black Hoodie",
+    description: "Heavyweight black techwear hoodie with utility zip pocket on sleeve.",
+    price: "৳ 2,750",
+    image: "/Hodie-5.png",
+  },
+  {
+    id: "bh-7",
+    name: "Boys Tribal Flame Sleeve Graphic Hoodie",
+    description: "Dark streetwear black hoodie with silver flame line art along the sleeves.",
+    price: "৳ 2,850",
+    image: "/Hodie-6.png",
+  },
+  {
+    id: "bh-8",
+    name: "Boys Washed Broken Graphic Street Hoodie",
+    description: "Washed charcoal black hoodie with bold chest typography and flame sleeves.",
+    price: "৳ 2,850",
+    image: "/boy-hoodie-2.png",
+  },
+  {
+    id: "bh-9",
+    name: "Boys Minimalist Black Center Crown Hoodie",
+    description: "Essential black hoodie featuring clean central crown branding.",
+    price: "৳ 2,450",
+    image: "/boy-hoodie-3.png",
+  },
+  {
+    id: "bh-10",
+    name: "Boys Cream & Black Contrast Raglan Hoodie",
+    description: "Two-tone cream beige and black colorblock streetwear hoodie.",
+    price: "৳ 2,650",
+    image: "/boy-hoodie-4.png",
+  },
+  {
+    id: "bh-11",
+    name: "Boys Forest Green Crown Fleece Pullover",
+    description: "Deep forest green fleece hoodie with chest crown accent.",
+    price: "৳ 2,350",
+    image: "/boy-hoodie-5.png",
+  },
+];
