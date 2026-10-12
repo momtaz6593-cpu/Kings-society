@@ -31,7 +31,6 @@ export default function CollectionsPage() {
       {/* Filtered Product Grid */}
       <CollectionsGrid
         selectedCategory={selectedCategory}
-        setSelectedGender={selectedGender}
         selectedGender={selectedGender}
       />
     </main>

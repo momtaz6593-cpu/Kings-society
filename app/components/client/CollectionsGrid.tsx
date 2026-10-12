@@ -83,10 +83,6 @@ export default function CollectionsGrid({
                     sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
                     className="object-cover object-center group-hover:scale-105 transition duration-500"
                   />
-                  {/* Gender Tag */}
-                  <span className="absolute top-2 left-2 bg-black/70 backdrop-blur-md text-[9px] font-bold uppercase tracking-wider text-amber-400 px-2 py-0.5 rounded border border-amber-400/30">
-                    {product.gender}
-                  </span>
                 </div>
 
                 {/* Product Info */}
