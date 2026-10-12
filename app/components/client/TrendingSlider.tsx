@@ -22,8 +22,8 @@ export default function TrendingSlider({ children }: TrendingSliderProps) {
 
   return (
     <div className="relative w-full">
-      {/* Scroll Navigation Buttons for Desktop */}
-      <div className="hidden sm:flex justify-end items-center space-x-2 mb-4">
+      {/* Scroll Navigation Buttons for Desktop / PC only */}
+      <div className="hidden lg:flex justify-end items-center space-x-2 mb-4">
         <button
           onClick={() => handleScroll("left")}
           className="w-9 h-9 rounded-full border border-neutral-800 bg-neutral-900/90 text-white hover:bg-amber-400 hover:text-black hover:border-amber-400 flex items-center justify-center transition cursor-pointer"

@@ -35,10 +35,15 @@ interface CartContextType {
 
 const CartContext = createContext<CartContextType | undefined>(undefined);
 
-// Helper to convert price string (e.g. "$45.00" or "45") to number
+// Helper to convert price string (e.g. "$45.00", "৳ ২,৪৫০", "৳ 1,150", "59") to number
 export function parsePriceToNumber(priceStr: string): number {
   if (!priceStr) return 0;
-  const cleaned = priceStr.replace(/[^0-9.]/g, "");
+  const bengaliToEnglish: Record<string, string> = {
+    "০": "0", "১": "1", "২": "2", "৩": "3", "৪": "4",
+    "৫": "5", "৬": "6", "৭": "7", "৮": "8", "৯": "9",
+  };
+  let cleaned = priceStr.replace(/[০-৯]/g, (digit) => bengaliToEnglish[digit] || digit);
+  cleaned = cleaned.replace(/[^0-9.]/g, "");
   const num = parseFloat(cleaned);
   return isNaN(num) ? 0 : num;
 }
@@ -157,6 +162,9 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
 
   const removeFromCart = (productId: string) => {
     setCart((prev) => prev.filter((item) => item.id !== productId));
+    setSaleHistory((prev) =>
+      prev.filter((item) => item.productId !== productId && item.id !== productId)
+    );
   };
 
   const updateQuantity = (productId: string, quantity: number) => {
@@ -167,10 +175,18 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
     setCart((prev) =>
       prev.map((item) => (item.id === productId ? { ...item, quantity } : item))
     );
+    setSaleHistory((prev) =>
+      prev.map((item) =>
+        item.productId === productId || item.id === productId
+          ? { ...item, quantity }
+          : item
+      )
+    );
   };
 
   const clearCart = () => {
     setCart([]);
+    setSaleHistory([]);
   };
 
   const clearSaleHistory = () => {

@@ -34,10 +34,10 @@ export default function SaleView() {
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <Link
-              href="/men/shirts"
+              href="/collections"
               className="bg-amber-400 hover:bg-amber-500 text-black font-extrabold text-xs uppercase tracking-widest px-8 py-3.5 rounded transition duration-200 shadow-lg shadow-amber-400/20"
             >
-              Explore Shirts & Add To Cart
+              Explore All Produtcs
             </Link>
           </div>
         </div>
