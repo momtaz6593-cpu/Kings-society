@@ -57,18 +57,18 @@ export default function CollectionsGrid({
   }, [selectedCategory, selectedGender]);
 
   return (
-    <section className="w-full bg-[#0b0c10] min-h-[60vh] py-8 px-4 md:px-8">
-      <div className="max-w-7xl mx-auto">
+    <section className="w-full bg-[#0b0c10] min-h-[60vh] py-8 xl:py-12 px-4 md:px-8 xl:px-12">
+      <div className="max-w-7xl xl:max-w-[1400px] 2xl:max-w-[1700px] mx-auto">
         {/* Count Indicator */}
-        <div className="mb-6 flex items-center justify-between">
-          <p className="text-gray-400 text-xs font-semibold uppercase tracking-wider">
+        <div className="mb-6 xl:mb-8 flex items-center justify-between">
+          <p className="text-gray-400 text-xs xl:text-sm font-semibold uppercase tracking-wider">
             Showing <span className="text-amber-400">{products.length}</span> Products
           </p>
         </div>
 
         {/* Product Grid */}
         {products.length > 0 ? (
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-5 gap-4 md:gap-6 xl:gap-8">
             {products.map((product, idx) => (
               <div
                 key={`${product.id}-${idx}`}
@@ -86,23 +86,23 @@ export default function CollectionsGrid({
                 </div>
 
                 {/* Product Info */}
-                <div className="p-3 sm:p-4 flex flex-col justify-between flex-grow">
+                <div className="p-3 sm:p-4 xl:p-5 2xl:p-6 flex flex-col justify-between flex-grow">
                   <div>
-                    <h3 className="text-white font-semibold text-xs sm:text-sm line-clamp-1 group-hover:text-amber-400 transition">
+                    <h3 className="text-white font-semibold text-xs sm:text-sm xl:text-base 2xl:text-lg line-clamp-1 group-hover:text-amber-400 transition">
                       {product.name}
                     </h3>
-                    <p className="text-neutral-400 text-[10px] sm:text-[11px] mt-1 line-clamp-1">
+                    <p className="text-neutral-400 text-[10px] sm:text-[11px] xl:text-xs 2xl:text-sm mt-1 line-clamp-1">
                       {product.description}
                     </p>
 
-                    <div className="flex items-center justify-between mt-2 sm:mt-3">
-                      <p className="text-amber-400 font-bold text-xs sm:text-sm">
+                    <div className="flex items-center justify-between mt-2 sm:mt-3 xl:mt-4">
+                      <p className="text-amber-400 font-bold text-xs sm:text-sm xl:text-base 2xl:text-lg">
                         {product.price}
                       </p>
                     </div>
                   </div>
 
-                  <div className="mt-3">
+                  <div className="mt-3 xl:mt-4">
                     <AddToCartButton product={product} />
                   </div>
                 </div>
@@ -111,7 +111,7 @@ export default function CollectionsGrid({
           </div>
         ) : (
           <div className="text-center py-20 border border-dashed border-neutral-800 rounded-lg">
-            <p className="text-gray-400 text-sm">No products found in this filter selection.</p>
+            <p className="text-gray-400 text-sm xl:text-base">No products found in this filter selection.</p>
           </div>
         )}
       </div>

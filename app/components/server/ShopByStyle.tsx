@@ -10,21 +10,21 @@ const styles = [
   {
     id: 1,
     title: "ESSENTIALS",
-    subtitle: "Clean. Simple. Always.",
+    subtitle: "Clean. Simple.",
     image: img1,
     link: "/collections",
   },
   {
     id: 2,
     title: "STREET",
-    subtitle: "Bold. Urban. Expressive.",
+    subtitle: "Bold. Urban..",
     image: img2,
     link: "/collections",
   },
   {
     id: 3,
-    title: "SMART CASUAL",
-    subtitle: "Polished. Modern. Versatile.",
+    title: "CASUAL",
+    subtitle: "Polished. Modern.",
     image: img3,
     link: "/collections",
   },
@@ -32,21 +32,21 @@ const styles = [
 
 export default function ShopByStyle() {
   return (
-    <section className="w-full bg-[#0b0c10] text-white py-8 md:py-14 px-4 md:px-12 border-b border-gray-800">
-      <div className="max-w-7xl mx-auto">
+    <section className="w-full bg-[#0b0c10] text-white py-8 md:py-14 xl:py-18 2xl:py-24 px-4 md:px-12 border-b border-gray-800">
+      <div className="max-w-7xl xl:max-w-[1400px] 2xl:max-w-[1700px] mx-auto">
         
         {/* Section Header */}
-        <div className="mb-6 md:mb-8">
-          <span className="text-amber-500 font-semibold text-xs md:text-sm tracking-widest uppercase block mb-1">
+        <div className="mb-6 md:mb-8 xl:mb-12">
+          <span className="text-amber-500 font-semibold text-xs md:text-sm xl:text-base 2xl:text-lg tracking-widest uppercase block mb-1 xl:mb-2">
             SHOP BY STYLE
           </span>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif font-bold text-white tracking-wide">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl font-serif font-bold text-white tracking-wide">
             Find Your Look
           </h2>
         </div>
 
         {/* Grid Container (1 column on mobile, 3 columns on desktop) */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-6 xl:gap-8">
           {styles.map((style) => (
             <Link
               key={style.id}
@@ -68,20 +68,20 @@ export default function ShopByStyle() {
               </div>
 
               {/* 2. Text Content (Right-aligned) */}
-              <div className="relative z-10 h-full p-5 sm:p-6 flex flex-col justify-center items-end text-right">
+              <div className="relative z-10 h-full p-5 sm:p-6 xl:p-8 2xl:p-10 flex flex-col justify-center items-end text-right">
                 
                 {/* Card Title */}
-                <h3 className="text-lg sm:text-xl font-serif font-bold text-white tracking-wider group-hover:text-amber-400 transition-colors">
+                <h3 className="text-lg sm:text-xl xl:text-2xl 2xl:text-3xl font-serif font-bold text-white tracking-wider group-hover:text-amber-400 transition-colors">
                   {style.title}
                 </h3>
 
                 {/* Subtitle */}
-                <p className="text-gray-300 text-xs sm:text-sm font-light mt-1 mb-3">
+                <p className="text-gray-300 text-xs sm:text-sm xl:text-base 2xl:text-lg font-light mt-1 xl:mt-2 mb-3 xl:mb-5">
                   {style.subtitle}
                 </p>
 
                 {/* Shop Now Action */}
-                <span className="inline-flex items-center gap-1.5 text-amber-400 font-medium text-xs sm:text-sm group-hover:translate-x-1 transition-transform duration-300">
+                <span className="inline-flex items-center gap-1.5 text-amber-400 font-medium text-xs sm:text-sm xl:text-base 2xl:text-lg group-hover:translate-x-1 transition-transform duration-300">
                   Shop Now ➔
                 </span>
 

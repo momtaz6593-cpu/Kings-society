@@ -7,22 +7,22 @@ import { MEN_SHIRTS } from "@/Data/shirts";
 
 export default function TrendingShirtsSection() {
   return (
-    <section className="w-full bg-[#0b0c10] py-10 px-4 md:px-8">
-      <div className="max-w-7xl mx-auto">
+    <section className="w-full bg-[#0b0c10] py-10 xl:py-16 2xl:py-20 px-4 md:px-8 xl:px-12">
+      <div className="max-w-7xl xl:max-w-[1400px] 2xl:max-w-[1700px] mx-auto">
         {/* Header */}
-        <div className="border-b border-neutral-800 pb-4 mb-6 flex items-end justify-between">
+        <div className="border-b border-neutral-800 pb-4 xl:pb-6 mb-6 xl:mb-8 flex items-end justify-between">
           <div>
-            <h2 className="text-white text-xl md:text-2xl font-black uppercase tracking-widest">
+            <h2 className="text-white text-xl md:text-2xl xl:text-3xl 2xl:text-4xl font-black uppercase tracking-widest">
               TRENDING SHIRTS
             </h2>
-            <p className="text-gray-400 text-xs mt-1">
+            <p className="text-gray-400 text-xs xl:text-sm 2xl:text-base mt-1">
               Premium fabric. Timeless designs.
             </p>
           </div>
 
           <Link
             href="/men/shirts"
-            className="text-xs text-amber-400 hover:underline flex items-center gap-1 font-semibold pb-1"
+            className="text-xs xl:text-sm 2xl:text-base text-amber-400 hover:underline flex items-center gap-1 font-semibold pb-1"
           >
             View All &rarr;
           </Link>
@@ -36,6 +36,7 @@ export default function TrendingShirtsSection() {
               className="
                 w-full
                 lg:snap-start lg:flex-none lg:w-[calc(25%-12px)]
+                xl:w-[calc(25%-16px)]
                 group bg-neutral-900/60 border border-neutral-800/80 rounded-md overflow-hidden hover:border-amber-400/50 transition duration-300 flex flex-col justify-between
               "
             >
@@ -51,23 +52,23 @@ export default function TrendingShirtsSection() {
               </div>
 
               {/* Product Info */}
-              <div className="p-3 sm:p-4 flex flex-col justify-between flex-grow">
+              <div className="p-3 sm:p-4 xl:p-5 2xl:p-6 flex flex-col justify-between flex-grow">
                 <div>
-                  <h3 className="text-white font-semibold text-xs sm:text-sm line-clamp-1 group-hover:text-amber-400 transition">
+                  <h3 className="text-white font-semibold text-xs sm:text-sm xl:text-base 2xl:text-lg line-clamp-1 group-hover:text-amber-400 transition">
                     {product.name}
                   </h3>
-                  <p className="text-neutral-400 text-[10px] sm:text-[11px] mt-1 line-clamp-1">
+                  <p className="text-neutral-400 text-[10px] sm:text-[11px] xl:text-xs 2xl:text-sm mt-1 line-clamp-1">
                     {product.description}
                   </p>
 
-                  <div className="flex items-center justify-between mt-2 sm:mt-3">
-                    <p className="text-amber-400 font-bold text-xs sm:text-sm">
+                  <div className="flex items-center justify-between mt-2 sm:mt-3 xl:mt-4">
+                    <p className="text-amber-400 font-bold text-xs sm:text-sm xl:text-base 2xl:text-lg">
                       {product.price}
                     </p>
                   </div>
                 </div>
 
-                <div className="mt-3">
+                <div className="mt-3 xl:mt-4">
                   <AddToCartButton product={product} />
                 </div>
               </div>

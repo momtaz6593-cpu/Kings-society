@@ -4,8 +4,8 @@ import Link from "next/link";
 
 export default function DiscountBanner() {
   return (
-    <section className="w-full bg-[#0b0c10] py-8 px-4 md:px-8">
-      <div className="max-w-7xl mx-auto rounded-xl border border-neutral-800/80 bg-neutral-950 overflow-hidden shadow-2xl relative">
+    <section className="w-full bg-[#0b0c10] py-8 xl:py-14 2xl:py-20 px-4 md:px-8 xl:px-12">
+      <div className="max-w-7xl xl:max-w-[1400px] 2xl:max-w-[1700px] mx-auto rounded-xl border border-neutral-800/80 bg-neutral-950 overflow-hidden shadow-2xl relative">
         
         {/* Mobile View: Background Image with Overlay (Aspect Ratio 16:9) */}
         <div className="block md:hidden relative w-full aspect-[16/9] min-h-[260px]">
@@ -37,9 +37,9 @@ export default function DiscountBanner() {
         </div>
 
         {/* PC / Desktop View: Split Layout (2/3 Image + 1/3 Content) */}
-        <div className="hidden md:grid md:grid-cols-3 items-center w-full min-h-[220px]">
+        <div className="hidden md:grid md:grid-cols-3 items-center w-full min-h-[220px] xl:min-h-[280px] 2xl:min-h-[340px]">
           {/* Image Container (Takes 2 Columns out of 3) */}
-          <div className="col-span-2 relative w-full h-full min-h-[220px] overflow-hidden">
+          <div className="col-span-2 relative w-full h-full min-h-[220px] xl:min-h-[280px] 2xl:min-h-[340px] overflow-hidden">
             <Image
               src="/discount-img.png" // file extension check kore niyo
               alt="Discount Offer"
@@ -52,29 +52,29 @@ export default function DiscountBanner() {
           </div>
 
           {/* Text & Button Container (Takes 1 Column) */}
-          <div className="col-span-1 p-6 md:p-8 flex flex-col justify-center border-l border-neutral-800/50 bg-neutral-950">
-            <span className="text-amber-400 text-xs font-bold uppercase tracking-widest mb-1">
+          <div className="col-span-1 p-6 md:p-8 xl:p-10 2xl:p-12 flex flex-col justify-center border-l border-neutral-800/50 bg-neutral-950">
+            <span className="text-amber-400 text-xs xl:text-sm 2xl:text-base font-bold uppercase tracking-widest mb-1 xl:mb-2">
               LIMITED TIME
             </span>
-            <h2 className="text-white text-2xl lg:text-3xl font-black uppercase tracking-tight leading-none mb-2">
+            <h2 className="text-white text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-black uppercase tracking-tight leading-none mb-2 xl:mb-3">
               UP TO 40% OFF
             </h2>
-            <p className="text-gray-400 text-xs lg:text-sm mb-6">
+            <p className="text-gray-400 text-xs lg:text-sm xl:text-base 2xl:text-lg mb-6 xl:mb-8">
               On Selected Men's Collection
             </p>
 
-            <div className="flex items-center justify-between pt-2 border-t border-neutral-800/80">
+            <div className="flex items-center justify-between pt-2 xl:pt-4 border-t border-neutral-800/80">
               <Link
                 href="/collections"
-                className="px-5 py-2.5 border border-amber-400/80 text-amber-400 text-xs font-bold tracking-wider rounded hover:bg-amber-400 hover:text-black transition duration-300 uppercase shadow-lg shadow-amber-400/10"
+                className="px-5 xl:px-7 py-2.5 xl:py-3.5 border border-amber-400/80 text-amber-400 text-xs xl:text-sm 2xl:text-base font-bold tracking-wider rounded hover:bg-amber-400 hover:text-black transition duration-300 uppercase shadow-lg shadow-amber-400/10"
               >
                 SHOP NOW &rarr;
               </Link>
               <div className="pl-4 border-l border-amber-500/50 text-right">
-                <p className="text-[10px] text-gray-400 font-medium tracking-wider uppercase">
+                <p className="text-[10px] xl:text-xs 2xl:text-sm text-gray-400 font-medium tracking-wider uppercase">
                   PREMIUM QUALITY
                 </p>
-                <p className="text-[10px] text-amber-400 font-semibold tracking-wider uppercase">
+                <p className="text-[10px] xl:text-xs 2xl:text-sm text-amber-400 font-semibold tracking-wider uppercase">
                   MEN'S WEAR
                 </p>
               </div>
