@@ -51,7 +51,7 @@ export default function Footer() {
               </h3>
               <ul className="space-y-2 xl:space-y-3 text-xs xl:text-sm 2xl:text-base">
                 <li><Link href="/contact" className="hover:text-amber-400 transition">Contact Us</Link></li>
-                <li><Link href="/shipping" className="hover:text-amber-400 transition">Shipping Info</Link></li>
+                <li><Link href="/about" className="hover:text-amber-400 transition">About Us</Link></li>
                 <li><Link href="/returns" className="hover:text-amber-400 transition">Returns & Exchanges</Link></li>
               </ul>
             </div>
