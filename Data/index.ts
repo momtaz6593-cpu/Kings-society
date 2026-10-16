@@ -1,3 +1,4 @@
+export type { Product } from "./shirts";
 import { MEN_SHIRTS, BOYS_SHIRTS } from "./shirts";
 import { MEN_PANTS, BOYS_PANTS } from "./pants";
 import { MEN_SNEAKERS, BOYS_SNEAKERS } from "./sneakers";
@@ -22,3 +23,19 @@ export const BOYS_DATA: Record<string, any[]> = {
   accessories: BOYS_ACCESSORIES,
   hoodies: BOYS_HOODIES,
 };
+
+// 🔍 সার্চের জন্য সব প্রোডাক্টের একটি সম্মিলিত অ্যারে (Single Combined Array)
+export const ALL_PRODUCTS = [
+  ...MEN_SHIRTS,
+  ...BOYS_SHIRTS,
+  ...MEN_PANTS,
+  ...BOYS_PANTS,
+  ...MEN_SNEAKERS,
+  ...BOYS_SNEAKERS,
+  ...MEN_JACKETS,
+  ...BOYS_JACKETS,
+  ...MEN_ACCESSORIES,
+  ...BOYS_ACCESSORIES,
+  ...MEN_HOODIES,
+  ...BOYS_HOODIES,
+];

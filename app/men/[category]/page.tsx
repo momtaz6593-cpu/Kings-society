@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { MEN_DATA } from "@/Data"; // Central Data folder
 import AddToCartButton from "@/app/components/client/AddToCartButton";
+import ClickableProductCard from "@/app/components/client/ClickableProductCard";
 
 interface PageProps {
   params: Promise<{
@@ -42,6 +43,7 @@ export default async function MenCategoryPage({ params }: PageProps) {
         {/* Products Grid */}
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 md:gap-6">
           {products.map((product) => (
+            <ClickableProductCard key={product.id} product={product}>
             <div
               key={product.id}
               className="group bg-neutral-900/60 border border-neutral-800 rounded-md overflow-hidden hover:border-amber-400/50 transition duration-300 flex flex-col justify-between"
@@ -69,6 +71,7 @@ export default async function MenCategoryPage({ params }: PageProps) {
                 <AddToCartButton product={product} />
               </div>
             </div>
+            </ClickableProductCard>
           ))}
         </div>
       </div>
