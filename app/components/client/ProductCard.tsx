@@ -2,12 +2,11 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import { Product } from "@/Data";
 import ProductModal from "@/app/components/client/ProductModal";
 import AddToCartButton from "@/app/components/client/AddToCartButton";
 
 interface ProductCardProps {
-  product: Product;
+  product: any;
   className?: string;
 }
 
@@ -31,7 +30,7 @@ export default function ProductCard({ product, className = "w-full" }: ProductCa
           />
         </div>
 
-        {/* 🔴 মোবাইলের জন্য p-2.5 দেওয়া হলো যাতে টাইট ও চওড়া দেখায় */}
+        {/* Product Info */}
         <div className="p-2.5 sm:p-4 flex flex-col justify-between flex-grow">
           <div>
             <h3 className="text-white font-semibold text-xs sm:text-sm line-clamp-1 group-hover:text-amber-400 transition">
