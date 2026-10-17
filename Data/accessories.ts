@@ -112,7 +112,7 @@ export const BOYS_ACCESSORIES: Product[] = [
     id: "ba-1",
     name: "Boys Streetwear Essentials Combo Set",
     description: "Complete accessories set including cap, sunglasses, watch, and wallet.",
-    price: "$4.00",
+    price: "$40.00",
     image: "/boy-ac.png",
     tags: ["accessory", "accessories", "cap", "sunglasses", "watch", "wallet", "combo", "set", "essentials", "boys", "kids"]
   },

@@ -41,7 +41,7 @@ export default function BoyShopByC() {
           </div>
 
           <Link
-            href="/boys"
+            href="/collections"
             className="text-amber-400 hover:text-amber-300 text-xs xl:text-sm 2xl:text-base font-semibold flex items-center space-x-1 transition"
           >
             <span>View All</span>
